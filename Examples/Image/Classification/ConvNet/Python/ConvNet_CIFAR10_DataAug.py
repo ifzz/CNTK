@@ -13,7 +13,7 @@ from cntk.models import Sequential, LayerStack
 from cntk.ops import input_variable, cross_entropy_with_softmax, classification_error, relu, element_times, constant
 from cntk.io import MinibatchSource, ImageDeserializer, StreamDef, StreamDefs
 from cntk import Trainer, persist, cntk_py
-from cntk.learner import momentum_sgd, learning_rate_schedule, momentum_schedule, momentum_as_time_constant_schedule
+from cntk.learner import momentum_sgd, learning_rate_schedule, momentum_as_time_constant_schedule, UnitType
 from _cntk_py import set_computation_network_trace_level
 
 # Paths relative to current python file.
